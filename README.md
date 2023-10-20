@@ -48,7 +48,7 @@ Booking.comやトリップアドバイザーなどホテル検索や予約サー
     * 投稿に対して複数のタグを設定できます (例：北海道、自然、朝食付き　など)
 * 宿泊体験の投稿一覧機能(未ログインユーザー利用可)
   * 検索機能　
-    *　投稿一覧からフリーワード、タグ検索ができます
+    * 投稿一覧からフリーワード、タグ検索ができます
 * マイページ機能(ログインユーザーのみ)
   * 位置情報機能
     * 地図アプリと連携し、宿泊したことのある施設をピン留めして記録できます
@@ -82,3 +82,6 @@ Booking.comやトリップアドバイザーなどホテル検索や予約サー
 * Geocoder
 * LINE API
 * 楽天トラベルAPI 又は じゃらんAPI
+
+## 画面遷移図
+[Figma](https://www.figma.com/file/C0Bip1eTMPglSgRlUEG4Ml/hotel_choice?type=design&node-id=0%3A1&mode=design&t=kAZaj9H7sLlcika2-1)
