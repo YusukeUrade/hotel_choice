@@ -87,4 +87,4 @@ Booking.comやトリップアドバイザーなどホテル検索や予約サー
 [Figma](https://www.figma.com/file/C0Bip1eTMPglSgRlUEG4Ml/hotel_choice?type=design&node-id=0%3A1&mode=design&t=kAZaj9H7sLlcika2-1)
 
 ## ER図
-[ER図](https://gyazo.com/dd68a3eba50e50d2f33623ae7cf0582b)
+[ER図](https://gyazo.com/41af8e40ebda37afc0a46492a47585dd)
