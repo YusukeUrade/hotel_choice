@@ -45,6 +45,7 @@ gem "bootsnap", require: false
 #TailwindCSS,daisyUI導入
 gem 'cssbundling-rails' 
 gem 'jsbundling-rails'
+gem 'tailwindcss-rails'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
