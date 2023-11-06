@@ -1,0 +1,27 @@
+<div class="flex justify-center items-center h-screen">
+  <div class="text-center">
+    <h1 class="text-3xl m-5">ユーザー登録</h1>
+    <%= form_with model: @user, local: true do |f| %>
+      <div class="mb-3">
+      <div class="mb-3">
+        <%= f.label :name, t("activerecord.attributes.user.name") %>
+        <%= f.text_field :name, class: "input input-bordered input-accent w-full max-w-xs", placeholder: t(".name") %>
+      </div>
+      </div>
+      <div class="mb-3">
+        <%= f.label :email, t("activerecord.attributes.user.email") %>
+        <%= f.email_field :email, class: "input input-bordered input-accent w-full max-w-xs", placeholder: t(".email") %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :password, t("activerecord.attributes.user.password") %>
+        <%= f.password_field :password, class: "input input-bordered input-accent w-full max-w-xs", placeholder: t(".password") %>
+      </div>
+      <div class="mb-10">
+        <%= f.label :password_confirmation, t("activerecord.attributes.user.password_confirmation") %>
+        <%= f.password_field :password_confirmation, class: "input input-bordered input-accent w-full max-w-xs", placeholder: t(".password_confirmation") %>
+      </div>
+      <%= f.submit "登録", class: "btn btn-active btn-primary mr-5" %>
+      <%= link_to "ログインページへ", "#", class: "btn btn-active btn-primary" %>
+    <% end %>
+  </div>
+</div>
