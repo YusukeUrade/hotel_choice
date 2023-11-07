@@ -50,6 +50,9 @@ gem 'tailwindcss-rails'
 # i18n導入　国際化
 gem 'rails-i18n'
 
+# postgresql
+gem 'pg'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
