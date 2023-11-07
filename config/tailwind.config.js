@@ -7,12 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+
     },
   },
   daisyui: {
     themes: [
-      'aqua'
+      'emerald'
     ]
   },
   plugins: [
