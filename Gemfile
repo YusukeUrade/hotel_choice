@@ -56,6 +56,11 @@ gem 'pg'
 # ユーザー登録、ログイン機能
 gem 'devise'
 
+# LINEログイン
+gem 'omniauth-line'
+gem 'omniauth-rails_csrf_protection'
+
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
