@@ -60,6 +60,8 @@ gem 'devise'
 gem 'omniauth-line'
 gem 'omniauth-rails_csrf_protection'
 
+# 環境変数管理
+gem 'dotenv-rails'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

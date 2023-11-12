@@ -39,3 +39,8 @@ vendor/bundle
 !/app/assets/builds/.keep
 
 /node_modules
+
+# 環境変数設定ファイル
+/.env
+
+/.ngrok
