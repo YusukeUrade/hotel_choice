@@ -1,0 +1,20 @@
+<div class="flex justify-center items-center h-screen">
+  <div class="text-center max-w-md w-full">
+    <h1 class="text-3xl m-5 mb-10"><%= t(".title") %></h1>
+
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= render "users/shared/error_messages", resource: resource %>
+
+      <div class="mb-5">
+        <%= f.label :email, class: "block text-left mb-1 text-sm" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "w-full p-3 border border-gray-300 rounded" %>
+      </div>
+
+      <div class="mb-10">
+        <%= f.submit t(".reset_instruction"), class: "btn btn-active btn-primary w-full" %>
+      </div>
+    <% end %>
+
+    <%= render "users/shared/links" %>
+  </div>
+</div>

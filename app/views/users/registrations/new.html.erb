@@ -1,0 +1,34 @@
+<div class="flex justify-center items-center h-screen">
+  <div class="text-center max-w-md w-full">
+    <h1 class="text-3xl m-5 mb-10"><%= t(".title") %></h1>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: "w-full") do |f| %>
+      <%= render "users/shared/error_messages", resource: resource %>
+
+      <div class="mb-5">
+        <%= f.label :name, class: "block text-left mb-1" %>
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "w-full p-2 border rounded", placeholder: "ユーザー名" %>
+      </div>
+
+      <div class="mb-5">
+        <%= f.label :email, class: "block text-left mb-1" %>
+        <%= f.email_field :email, autocomplete: "email", class: "w-full p-2 border rounded", placeholder: "HotelChoice@example.com" %>
+      </div>
+
+      <div class="mb-5">
+        <%= f.label :password, class: "block text-left mb-1" %>
+        <%= f.password_field :password, autocomplete: "new-password", class: "w-full p-2 border rounded", placeholder: "6文字以上で入力してください" %>
+      </div>
+
+      <div class="mb-10">
+        <%= f.label :password_confirmation, class: "block text-left mb-1" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "w-full p-2 border rounded", placeholder: "6文字以上で入力してください" %>
+      </div>
+
+      <%= f.submit t(".submit"), class: "btn btn-active btn-primary w-full mb-5" %>
+    <% end %>
+
+    <%= render "users/shared/links" %>
+  </div>
+</div>
+

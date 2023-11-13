@@ -7,7 +7,7 @@ default: &default
 
 development:
   <<: *default
-  database: hotel_choice
+  database: hotel_choice_development
 
 test:
   <<: *default

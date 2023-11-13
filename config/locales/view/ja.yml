@@ -3,9 +3,25 @@ ja:
     top:
       
   users:
-    new:
-      title: ユーザー新規登録
-      name: ユーザー名
-      email: メールアドレス
-      password: パスワード
-      password_confirmation: パスワード確認
+    registrations:
+      new:
+        title: ユーザー新規登録
+        name: ユーザー名
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード確認
+        submit: アカウント作成
+    sessions:
+      new:
+        login: ログイン
+    shared:
+      links:
+        login: ログイン
+        line_login: LINEログイン
+        sign_up: アカウント作成
+        password_forgot: パスワードをお忘れの場合
+    passwords:
+      new:
+        title: パスワードをお忘れの場合
+        reset_instruction: パスワードリセット手順を送信
+        
