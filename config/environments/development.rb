@@ -1,8 +1,6 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
-  config.hosts.clear
-  #config.hosts << ""
   config.cache_classes = false
   config.eager_load = false
   config.consider_all_requests_local = true
@@ -38,4 +36,8 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
   config.assets.quiet = true
+
+  config.hosts.clear
+  #config.hosts << ""
+  config.port = 3000
 end

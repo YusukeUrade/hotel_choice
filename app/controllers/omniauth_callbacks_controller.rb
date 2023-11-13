@@ -17,12 +17,10 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
         @profile.set_values(@omniauth)
         sign_in(:user, @profile)
       end
-      flash[:notice] = "ログインしました"
-      redirect_to expendable_items_path
+      redirect_to root_path
     end
   
     def fake_email(uid, provider)
       "#{auth.uid}-#{auth.provider}@example.com"
     end
   end
-  
