@@ -1,25 +1,26 @@
-<h2>Change your password</h2>
+<div class="flex justify-center items-center h-screen">
+  <div class="text-center max-w-md w-full">
+    <h1 class="text-3xl m-5 mb-10"><%= t(".title") %></h1>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "users/shared/error_messages", resource: resource %>
-  <%= f.hidden_field :reset_password_token %>
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), method: :put, html: { class: "w-full" }) do |f| %>
+      <%= render "users/shared/error_messages", resource: resource %>
+      <%= f.hidden_field :reset_password_token %>
 
-  <div class="field">
-    <%= f.label :password, "New password" %><br />
-    <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em><br />
+      <div class="mb-5">
+        <%= f.label :password, t(".new_password"), class: "block text-left mb-1 text-sm" %>
+        <%= f.password_field :password, autofocus: true, autocomplete: "new-password", class: "w-full p-3 border border-gray-300 rounded", placeholder: t(".new_password_placeholder") %>
+      </div>
+
+      <div class="mb-5">
+        <%= f.label :password_confirmation, t(".new_password_confirmation"), class: "block text-left mb-1 text-sm" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "w-full p-3 border border-gray-300 rounded", placeholder: t(".new_password_placeholder") %>
+      </div>
+
+      <div class="mb-10">
+        <%= f.submit t(".change_password"), class: "btn btn-active btn-primary w-full" %>
+      </div>
     <% end %>
-    <%= f.password_field :password, autofocus: true, autocomplete: "new-password" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirm new password" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= render "users/shared/links" %>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Change my password" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+</div>

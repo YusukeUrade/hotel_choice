@@ -9,7 +9,7 @@ Devise.setup do |config|
   config.expire_all_remember_me_on_sign_out = true
   config.password_length = 6..128
   config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
-  config.reset_password_within = 6.hours
+  config.reset_password_within = 24.hours
   config.sign_out_via = :get
   config.omniauth :line, ENV["LINE_KEY"], ENV["LINE_SECRET"]
   config.responder.error_status = :unprocessable_entity

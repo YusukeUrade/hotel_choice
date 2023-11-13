@@ -11,6 +11,9 @@ ja:
         password: パスワード
         password_confirmation: パスワード確認
         submit: アカウント作成
+        name_placeholder: ユーザー名
+        email_placeholder: HotelChoice@example.com
+        password_placeholder: 6文字以上の半角英数字
     sessions:
       new:
         login: ログイン
@@ -24,4 +27,13 @@ ja:
       new:
         title: パスワードをお忘れの場合
         reset_instruction: パスワードリセット手順を送信
+      edit:
+        title: パスワード再設定
+        change_password: パスワード更新
+        new_password: 新しいパスワード
+        new_password_confirmation: 新しいパスワード確認
+        new_password_placeholder: 6文字以上の半角英数字
+    mailer:
+      reset_password_instructions:
+        password_reset_url: パスワード再設定URL
         
