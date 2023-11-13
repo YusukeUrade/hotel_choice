@@ -55,6 +55,7 @@ gem 'pg'
 
 # ユーザー登録、ログイン機能
 gem 'devise'
+gem 'devise-i18n-views'
 
 # LINEログイン
 gem 'omniauth-line'
