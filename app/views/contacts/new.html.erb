@@ -2,6 +2,7 @@
   <div class="text-center max-w-md w-full">
     <h1 class="text-3xl m-5 mb-10"><%= t(".title") %></h1>
     <%= form_with model: @contact, local: true, url: { action: :confirm } do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
       <div class="mb-5">
         <%= f.label :name, class: "block text-left mb-1 text-sm" %>
         <%= f.text_field :name, autofocus: true, placeholder: t(".name_placeholder"), class: "w-full p-3 border border-gray-300 rounded-md" %>
