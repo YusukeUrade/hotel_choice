@@ -1,0 +1,32 @@
+<div class="flex justify-center items-center h-screen">
+  <div class="text-center max-w-md w-full">
+    <h1 class="text-3xl m-5 mb-20"><%= t(".title") %></h1>
+    <%= form_with model: @contact, local: true, url: { action: 'create' }, method: :post do |f| %>
+      <div class="mb-5">
+        <%= f.label :name, class: "block text-left mb-3 text-sm" %>
+        <div class="border border-gray-300 p-2">
+          <%= @contact.name %>
+          <%= f.hidden_field :name, value: @contact.name %>
+        </div>
+      </div>
+      <div class="mb-5">
+        <%= f.label :email, class: "block text-left mb-3 text-sm" %>
+        <div class="border border-gray-300 p-2">
+          <%= @contact.email %>
+          <%= f.hidden_field :email, value: @contact.email %>
+        </div>
+      </div>
+      <div class="mb-20">
+        <%= f.label :content, class: "block text-left mb-3 text-sm" %>
+        <div class="border border-gray-300 p-2"> 
+          <%= @contact.content %>
+          <%= f.hidden_field :content, value: @contact.content %>
+        </div>
+      </div>
+      <div class="flex justify-center mb-5">
+        <%= f.submit t(".submit"), class: "btn btn-active btn-primary mr-2" %>
+        <%= f.button t(".revise"), type: :button, class: "btn btn-active btn-secondary ml-2", onclick: "history.back()" %>
+      </div>
+    <% end %>
+  </div>
+</div>

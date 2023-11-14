@@ -1,5 +1,8 @@
 ja:
   activerecord:
+    models:
+      user: ユーザー
+      contacts: お問い合わせ
     attributes:
       user:
         name: ユーザー名
@@ -26,8 +29,10 @@ ja:
         unconfirmed_email: 未確認Eメール
         unlock_token: ロック解除用トークン
         updated_at: 更新日
-    models:
-      user: ユーザー
+      contact:
+        name: 名前
+        email: メールアドレス
+        content: 問い合わせ内容
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。

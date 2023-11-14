@@ -1,0 +1,25 @@
+<div class="flex justify-center items-center h-screen">
+  <div class="text-center max-w-md w-full">
+    <h1 class="text-3xl m-5 mb-10"><%= t(".title") %></h1>
+    <%= form_with model: @contact, local: true, url: { action: :confirm } do |f| %>
+      <div class="mb-5">
+        <%= f.label :name, class: "block text-left mb-1 text-sm" %>
+        <%= f.text_field :name, autofocus: true, placeholder: t(".name_placeholder"), class: "w-full p-3 border border-gray-300 rounded-md" %>
+      </div>
+      <div class="mb-5">
+        <%= f.label :email, class: "block text-left mb-1 text-sm" %>
+        <%= f.text_field :email, placeholder: t(".email_placeholder"), class: "w-full p-3 border border-gray-300 rounded-md" %>
+      </div>
+      <div class="mb-5">
+        <%= f.label :content, class: "block text-left mb-1 text-sm" %>
+        <%= f.text_area :content, placeholder: t(".content_placeholder"), class: "w-full p-3 border border-gray-300 rounded-md" %>
+      </div>
+      <div class="flex justify-center">
+        <%= f.submit t(".confirm"), class: "btn btn-active btn-primary w-full" %>
+      </div>
+      <div class="mt-3">
+        <%= link_to t(".back"), root_path%>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -36,4 +36,24 @@ ja:
     mailer:
       reset_password_instructions:
         password_reset_url: パスワード再設定URL
-        
+
+  shared:
+    footer:
+      contact: お問い合わせ
+  
+  contacts:
+    new:
+      title: お問い合わせ
+      back: 戻る
+      name_placeholder: 名前
+      email_placeholder: 返信先メールアドレス
+      content_placeholder: お問い合わせ内容(10文字以上)
+      confirm: 確認画面へ
+    confirm:
+      title: お問い合わせ内容確認
+      submit: 送信する
+      revise: 修正する
+    complete:
+      title: お問い合わせ完了
+      thanks: お問い合わせありがとうございました
+      to_home: Homeへ戻る
