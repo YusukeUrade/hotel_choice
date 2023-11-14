@@ -28,6 +28,9 @@
                     </div>
                   </label>
                   <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                    <li class="border-b border-base-200">
+                      <span class="font-bold p-2"><%= current_user.name %></span>
+                    </li>
                     <li>
                       <%= link_to "マイページ", "#" %>
                     </li>
@@ -64,6 +67,9 @@
       <ul class="menu p-4 min-h-full bg-base-200">
         <!-- Sidebar content here -->
         <% if user_signed_in? %>
+          <li class="border-b border-base-200">
+            <span class="font-bold p-2"><%= current_user.name %></span>
+          </li>
           <li>
             <%= link_to "マイページ", "#" %>
           </li>
